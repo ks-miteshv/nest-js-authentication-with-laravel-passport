@@ -10,6 +10,7 @@ import { ConfigModule } from '@nestjs/config';
       validationSchema: Joi.object({
         HOST: Joi.string().optional(),
         PORT: Joi.number().optional(),
+        PASSPORT_PUBLIC_KEY: Joi.string().required(),
       }),
     }),
   ],
